@@ -1,0 +1,18 @@
+<h1>Note Master</h1>
+
+<form (ngSubmit)="addNote()">
+  <input [(ngModel)]="newNote.title" name="title" placeholder="Title" required>
+  <br>
+  <textarea [(ngModel)]="newNote.description" name="description" placeholder="Description" required></textarea>
+  <br>
+  <button type="submit">Add Note</button>
+</form>
+
+<hr>
+
+<div *ngFor="let note of notes; let i = index">
+  <h3>{{ note.title }}</h3>
+  <p>{{ note.description }}</p>
+  <button (click)="deleteNote(i)">Delete</button>
+  <hr>
+</div>
