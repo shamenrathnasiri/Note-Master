@@ -5,7 +5,8 @@ import { NoteComponent } from './note/note.component';
   selector: 'app-root',
   standalone: true,
   imports: [NoteComponent],
-  template: `<app-note></app-note>`
+  template: `<app-note></app-note>
+`
 })
 export class AppComponent {
   title(title: any) {

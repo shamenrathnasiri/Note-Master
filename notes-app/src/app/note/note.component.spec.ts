@@ -11,7 +11,6 @@ describe('NoteComponent', () => {
       imports: [NoteComponent]
     })
     .compileComponents();
-    
     fixture = TestBed.createComponent(NoteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
