@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NoteComponent } from './note/note.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',

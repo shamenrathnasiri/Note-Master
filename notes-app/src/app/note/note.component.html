@@ -1,9 +1,9 @@
 <section class="notes-app">
-  <h2 class="notes-title">📝 My Notes</h2>
+<h2 class="notes-title">Note Master</h2>
 
-  <!-- Add New Note -->
-  <form (submit)="addNote(); $event.preventDefault();" class="note-form">
-    <input
+<!-- Add New Note -->
+<form (submit)="addNote(); $event.preventDefault();" class="note-form">
+<input
       [(ngModel)]="newNote.title"
       name="title"
       placeholder="Title"
@@ -32,8 +32,8 @@
         <h3 class="note-title">{{ note.title }}</h3>
         <p class="note-description">{{ note.description }}</p>
         <div class="note-actions">
-          <button (click)="editNote(note)" class="btn-edit" title="Edit Note">✏️ Edit</button>
-          <button (click)="deleteNote(note.id!)" class="btn-delete" title="Delete Note">🗑️ Delete</button>
+          <button (click)="editNote(note)" class="btn-edit" title="Edit Note">Edit</button>
+          <button (click)="deleteNote(note.id!)" class="btn-delete" title="Delete Note">Delete</button>
         </div>
       </div>
 
@@ -55,8 +55,8 @@
   required
 ></textarea>
         <div class="edit-actions">
-          <button type="submit" class="btn-update">💾 Save</button>
-          <button (click)="cancelEdit()" type="button" class="btn-cancel">❌ Cancel</button>
+          <button type="submit" class="btn-update">Save</button>
+          <button (click)="cancelEdit()" type="button" class="btn-cancel">Cancel</button>
         </div>
       </form>
     </div>

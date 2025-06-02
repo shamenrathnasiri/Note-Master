@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NoteService, Note } from './note.service';
+import { NoteService, Note } from '../note.service';
 
 @Component({
   selector: 'app-note',
